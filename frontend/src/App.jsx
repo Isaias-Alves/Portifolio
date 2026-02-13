@@ -31,10 +31,10 @@ const App = () => {
         <div
         onScroll={handleScroll} 
         className="h-screen bg-amber-50 text-neutral-900 dark:bg-neutral-950 dark:text-white transition-colors duration-200 relative overflow-y-auto">
-            
+
             <button 
             onClick={toggleTheme}
-            className="fixed top-6 right-6 z-50 p-3 rounded-full bg-neutral-300 dark:bg-neutral -900 hover:scale-110 transition-transform"
+            className="fixed top-6 right-6 z-50 p-3 rounded-full bg-amber-100 dark:bg-neutral-900 hover:scale-110 transition-transform"
             >
                 {theme === "dark" ? "Light Mode" : "Dark Mode"}
             </button>
@@ -53,7 +53,7 @@ const App = () => {
         </h1>
         
         <p className="text-xl mb-32 max-w-2xl mx-auto opacity-70">
-          "Role para ver a adaptação acontecer."
+          "Role para ver o portifólio de um verdadeiro general divino!"
         </p>
 
       </div>
