@@ -17,4 +17,23 @@ const App = () => {
         window.addEventListener("scroll", handleScroll);
         return window.removeEventListener("scroll", handleScroll);
     }, [])
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark")
+        } else {
+            document.documentElement.classList.remove("dark")
+        }
+    }, [theme])
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+    }
+
+    return (
+        
+    )
+
  }
+
+ return App
