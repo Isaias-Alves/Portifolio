@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import { useState, useEffect } from "react";
-import dharma from "./dharma-white.jpg";
-import dharmaDark from "./dharma-black.jpg";
+import dharma from "./assets/dharma-white.jpg";
+import dharmaDark from "./assets/dharma-black.jpg";
 
 
 const App = () => {
@@ -31,9 +31,19 @@ const App = () => {
     }
 
     return (
-        
+        <div className="min-h-[300vh] bg-amber-50 text-neutral-900 dark:bg-neutral-950 dark:text-white transition-colors duration-200 relative">
+
+            <button 
+            onclick={toggleTheme}
+            className="fixed top-6 right-6 z-50 p-3 rounded-full bg-neutral-300 dark:bg-neutral-900 hover:scale-110 transition-transform"
+            >
+                {theme === "dark" ? "Light Mode" : "Dark Mode"}
+            </button>
+
+
+        </div>
     )
 
  }
 
- return App
+export default App;
